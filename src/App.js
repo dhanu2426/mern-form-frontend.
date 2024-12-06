@@ -49,7 +49,7 @@ function App() {
   const handleSaveForm = () => {
     // Using axios to send a POST request with formData
     axios
-      .post("https://mern-form-backend-0qjv.onrender.com", formData) // Send formData as the request body
+      .post("https://mern-form-backend-0qjv.onrender.com/forms", formData) // Send formData as the request body
       .then((response) => {
         console.log("Form saved:", response.data); // handle success
       })
